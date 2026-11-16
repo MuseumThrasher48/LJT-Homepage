@@ -68,7 +68,6 @@ analytics:
 include:
   - .htaccess
   - _pages
-  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -94,14 +93,29 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - README.md
   - tmp
   - vendor
-  # Bundled template content not used by this personal homepage.
+  # Bundled template content and maintenance files not used by this homepage.
+  - _drafts
   - _posts
   - _publications
   - _talks
   - _teaching
   - _portfolio
+  - _config_docker.yml
+  - AGENTS.md
+  - docker-compose.yaml
+  - files
+  - scripts
+  - markdown_generator
+  - talkmap
+  - talkmap.ipynb
+  - talkmap.py
+  - talkmap_out.ipynb
+  - images/profile.png
+  - images/bio-photo.jpg
+  - images/bio-photo-2.jpg
   - _pages/archive-layout-with-content.md
   - _pages/category-archive.html
   - _pages/collection-archive.html
@@ -120,6 +134,7 @@ exclude:
 keep_files:
   - .git
   - .svn
+
 
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
