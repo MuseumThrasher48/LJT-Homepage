@@ -6,55 +6,55 @@
   {% assign author = site.author %}
 {% endif %}
 
-&lt;div itemscope itemtype="http://schema.org/Person"&gt;
-  &lt;div class="author__content"&gt;
-    &lt;h3 class="author__name" itemprop="name"&gt;{{ author.name }}&lt;/h3&gt;
+<div itemscope itemtype="http://schema.org/Person">
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
     {% if author.bio %}
-      &lt;p class="author__bio" itemprop="description"&gt;{{ author.bio }}&lt;/p&gt;
+      <p class="author__bio" itemprop="description">{{ author.bio }}</p>
     {% endif %}
-  &lt;/div&gt;
+  </div>
 
-  &lt;div class="author__urls-wrapper"&gt;
-    &lt;button class="btn btn--inverse" type="button"&gt;Follow&lt;/button&gt;
-    &lt;ul class="author__urls social-icons"&gt;
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse" type="button">Follow</button>
+    <ul class="author__urls social-icons">
       {% if author.employer %}
-        &lt;li class="author__desktop"&gt;
-          &lt;i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"&gt;&lt;/i&gt;
-          &lt;span itemprop="worksFor"&gt;{{ author.employer }}&lt;/span&gt;
-        &lt;/li&gt;
+        <li class="author__desktop">
+          <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>
+          <span itemprop="worksFor">{{ author.employer }}</span>
+        </li>
       {% endif %}
 
       {% if author.email %}
-        &lt;li&gt;
-          &lt;a href="mailto:{{ author.email }}" itemprop="email"&gt;
-            &lt;i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"&gt;&lt;/i&gt;Email
-          &lt;/a&gt;
-        &lt;/li&gt;
+        <li>
+          <a href="mailto:{{ author.email }}" itemprop="email">
+            <i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email
+          </a>
+        </li>
       {% endif %}
 
       {% if author.googlescholar %}
-        &lt;li&gt;
-          &lt;a href="{{ author.googlescholar }}" rel="me"&gt;
-            &lt;i class="ai ai-google-scholar ai-fw icon-pad-right" aria-hidden="true"&gt;&lt;/i&gt;Google Scholar
-          &lt;/a&gt;
-        &lt;/li&gt;
+        <li>
+          <a href="{{ author.googlescholar }}" rel="me">
+            <i class="ai ai-google-scholar ai-fw icon-pad-right" aria-hidden="true"></i>Google Scholar
+          </a>
+        </li>
       {% endif %}
 
       {% if author.github %}
-        &lt;li&gt;
-          &lt;a href="https://github.com/{{ author.github }}" rel="me"&gt;
-            &lt;i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"&gt;&lt;/i&gt;GitHub
-          &lt;/a&gt;
-        &lt;/li&gt;
+        <li>
+          <a href="https://github.com/{{ author.github }}" rel="me">
+            <i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub
+          </a>
+        </li>
       {% endif %}
 
       {% if author.twitter %}
-        &lt;li&gt;
-          &lt;a href="https://twitter.com/{{ author.twitter }}" rel="me"&gt;
-            &lt;i class="fab fa-fw fa-x-twitter icon-pad-right" aria-hidden="true"&gt;&lt;/i&gt;X (formerly Twitter)
-          &lt;/a&gt;
-        &lt;/li&gt;
+        <li>
+          <a href="https://twitter.com/{{ author.twitter }}" rel="me">
+            <i class="fab fa-fw fa-x-twitter icon-pad-right" aria-hidden="true"></i>X (formerly Twitter)
+          </a>
+        </li>
       {% endif %}
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+    </ul>
+  </div>
+</div>
